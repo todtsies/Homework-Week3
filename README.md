@@ -1,13 +1,13 @@
 # Homework-Week3
 Screenshots: 
 
-![Pic1](pics\2020-12-07.png "Deployed application without any clicks")
-![Pic2](pics\2020-12-07prompt.png "First prompt after clicking "Generate Password - asking to input how many characters")
-![Pic3](pics\2020-12-07specialChar.png "Do you want special characters in your password?")
-![Pic4](pics\2020-12-07numbers "Do you want numbers in your password?")
-![Pic5](pics\2020-12-07lowercase "Do you want any lowercase letters in your password?")
-![Pic6](pics\2020-12-07uppercase "Do you want any uppercase letters in your password?")
-![Pic7](pics\password.png "This is the generated password")
+![Pic1](.pics/2020-12-07.png "Deployed application without any clicks")
+![Pic2](.pics/2020-12-07prompt.png "First prompt after clicking "Generate Password - asking to input how many characters")
+![Pic3](.pics/2020-12-07specialChar.png "Do you want special characters in your password?")
+![Pic4](.pics/2020-12-07numbers "Do you want numbers in your password?")
+![Pic5](.pics/2020-12-07lowercase "Do you want any lowercase letters in your password?")
+![Pic6](.pics/2020-12-07uppercase "Do you want any uppercase letters in your password?")
+![Pic7](.pics/password.png "This is the generated password")
 
 Description:
 
