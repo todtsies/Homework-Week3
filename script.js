@@ -1,3 +1,4 @@
+// These are my arrays
 var specialChar = [
   "&",
   ",",
@@ -144,12 +145,11 @@ function generatePassword() {
   choices = passwordOptions();
   // stores concatenations
   var displayResult = [];
-  // store charcaters for password
+  // store characters for password
   var randomCharacters = [];
   // store user chosen characters
   var chosenCharacters = [];
-  // cStatement that adds value
-  // pushes new character to the chosen character vise visa
+  
   if (choices.confirmSpecialChar) {
     randomCharacters = randomCharacters.concat(specialChar);
     chosenCharacters.push(createRandom(specialChar));
@@ -176,7 +176,7 @@ function generatePassword() {
   }
 }
 // Assignment Code
-// diplay passwrpd in the password input
+// Diplays password in the password input
 var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var pickChoices = generatePassword();
