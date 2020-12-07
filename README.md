@@ -7,7 +7,7 @@ Screenshots:
 ![Pic4](pics/2020-12-07numbers.png "Do you want numbers in your password?")
 ![Pic5](pics/2020-12-07lowercase.png "Do you want any lowercase letters in your password?")
 ![Pic6](pics/2020-12-07uppercase.png "Do you want any uppercase letters in your password?")
-![Pic7](pics/password.png "This is the generated password")
+![Pic7](pics/2020-12-07password.png "This is the generated password")
 
 Description:
 
