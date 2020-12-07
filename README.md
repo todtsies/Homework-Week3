@@ -2,7 +2,7 @@
 Screenshots: 
 
 ![Pic1](pics/2020-12-07.png "Deployed application without any clicks")
-![Pic2](pics/2020-12-07prompt.png "First prompt after clicking "Generate Password - asking to input how many characters")
+![Pic2](pics/2020-12-07prompt.png "First prompt after clicking Generate Password asking to input how many characters")
 ![Pic3](pics/2020-12-07specialChar.png "Do you want special characters in your password?")
 ![Pic4](pics/2020-12-07numbers.png "Do you want numbers in your password?")
 ![Pic5](pics/2020-12-07lowercase.png "Do you want any lowercase letters in your password?")
