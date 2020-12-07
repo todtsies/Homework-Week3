@@ -76,6 +76,7 @@ var letterLower = [
   "z",
 ];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
 // Declaring my variables
 var length;
 var confirmSpecialChar;
@@ -83,16 +84,19 @@ var confirmNumbers;
 var confirmLowercase;
 var confirmUppercase;
 var choices;
+
 // Start of function that generates password
 function passwordOptions() {
   length = prompt(
     "How long do you want your password to be? Please choose a number between 8 and 128."
   );
+  
   // if/else statement regarding the prompt above
   if (!length) {
     alert("Please enter a value between 8 and 128.");
     return;
   }
+  
   //If user enters an incorrect number, this alert will show
   else if (length < 8 || length > 128) {
     alert(
@@ -100,6 +104,7 @@ function passwordOptions() {
     );
     return;
   }
+  
   // If user puts in correct number, these confirm variables will start to pop up
   else {
     confirmSpecialChar = confirm(
@@ -115,6 +120,7 @@ function passwordOptions() {
       "Ok! Do you want to include any uppercase letters in your password?"
     );
   }
+  
   // If statement for all 4 false answers to the confirm variables above
   if (
     confirmSpecialChar === false &&
@@ -125,6 +131,7 @@ function passwordOptions() {
     alert("You must choose something to have in your password!");
     return;
   }
+  
   // This object will store the input
   var psswrdOpions = {
     length: length,
@@ -135,18 +142,23 @@ function passwordOptions() {
   };
   return psswrdOpions;
 }
+
 // This function will get a random element in an array
 function createRandom(i) {
   var randomIndex = Math.floor(Math.random() * i.length);
   var randomElement = i[randomIndex];
   return randomElement;
 }
+
 function generatePassword() {
   choices = passwordOptions();
+  
   // stores concatenations
   var displayResult = [];
+  
   // store characters for password
   var randomCharacters = [];
+  
   // store user chosen characters
   var chosenCharacters = [];
   
@@ -154,18 +166,23 @@ function generatePassword() {
     randomCharacters = randomCharacters.concat(specialChar);
     chosenCharacters.push(createRandom(specialChar));
   }
+  
   if (choices.confirmNumbers) {
     randomCharacters = randomCharacters.concat(numbers);
     chosenCharacters.push(createRandom(numbers));
   }
+  
   if (choices.confirmLowercase) {
     randomCharacters = randomCharacters.concat(letterLower);
     chosenCharacters.push(createRandom(letterLower));
   }
+  
   if (choices.confirmUppercase) {
     randomCharacters = randomCharacters.concat(letterUpper);
     chosenCharacters.push(createRandom(letterUpper));
   }
+  
+  // For loops
   for (var i = 0; i < choices.length; i++) {
     var randomCharacter = createRandom(randomCharacters);
     displayResult.push(randomCharacter);
@@ -175,13 +192,16 @@ function generatePassword() {
     return displayResult.join("");
   }
 }
-// Assignment Code
+
+// Assignment Code - this is what was given to us
 // Diplays password in the password input
 var generateBtn = document.querySelector("#generate");
+
 function writePassword() {
   var pickChoices = generatePassword();
   var passwordTexts = document.querySelector("#password");
   passwordTexts.textContent = pickChoices;
   console.log(pickChoices);
 }
+
 generateBtn.addEventListener("click", writePassword);
